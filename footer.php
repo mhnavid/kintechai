@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/header&footer.css">
 </head>
 <body>
-<div class="foot" id="foot">
+<div class="footer" id="footer">
 
 </div>
 </body>
