@@ -6,12 +6,21 @@
  * Time: 6:30 PM
  */
 ?>
-<!DOCTYPE html>
-<html>
 <head>
 	<title>login</title>
 </head>
 <body>
-<h1>test</h1>
+<table align="center">
+    <tr>
+        <td>Email or Username :</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="password"></td>
+    </tr>
+    <tr align="center">
+        <td colspan="2"><input type="submit" value="Submit"></td>
+    </tr>
+</table>
 </body>
-</html>
