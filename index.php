@@ -9,12 +9,12 @@
 <div class="body-container">
 	<!-- name -->
 
-	<div class="name-container">
+	<div class="name-container" align="center">
 		<h1 class="name">KINTE CHAI</h1>
 	</div>
 
 	<!-- search-bar -->
-	<div class="search-bar">
+	<div class="search-bar" align="center">
 		<div class="search">
 	      <input type="text" class="searchTerm" placeholder="What are you looking for?">
 	      <button type="submit" class="searchButton">Search</button>
