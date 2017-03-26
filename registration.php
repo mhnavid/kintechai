@@ -14,7 +14,7 @@
 <body>
 <div class="registrationform" id="registrationform">
     <form action="#" method="post">
-        <table border="1px">
+        <table align="center">
             <tr>
                 <td>First Name</td>
                 <td>: <input type="text"></td>
@@ -23,16 +23,54 @@
                 <td>Last Name</td>
                 <td>: <input type="text"></td>
             </tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
+            <tr>
+                <td>Username</td>
+                <td>: <input type="text"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>: <input type="text"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>: <input type="password"></td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td>: <input type="password"></td>
+            </tr>
+            <tr>
+                <td>Occupation</td>
+                <td>: <input type="text"></td>
+            </tr>
+            <tr>
+                <td>Contact No.</td>
+                <td>: <input type="text"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>:
+                    <input type="radio" name="gender" value="male" checked>Male
+                    <input type="radio" name="gender" value="female" checked>Female
+                </td>
+            </tr>
+            <tr>
+                <td>Picture</td>
+                <td>: <input type="text"> <button>Browse</button></td>
+            </tr>
+            <tr>
+                <td>Buyer Type</td>
+                <td>:
+                    <select>
+                        <option value="corporate">Corporate</option>
+                        <option value="personal">Personal</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
         </table>
     </form>
 </div>
