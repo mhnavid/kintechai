@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Welcome</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
@@ -11,6 +11,7 @@
 
 	<div class="name-container" align="center">
 		<h1 class="name">KINTE CHAI</h1>
+        <a href=""></a>
 	</div>
 
 	<!-- search-bar -->

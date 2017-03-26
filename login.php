@@ -10,18 +10,20 @@
 	<title>login</title>
 </head>
 <body>
-<table align="center">
-    <tr>
-        <td>Email or Username</td>
-        <td>: <input type="text"></td>
-    </tr>
-    <tr>
-        <td>Password</td>
-        <td>: <input type="password"></td>
-    </tr>
-    <tr align="center">
-        <td></td>
-        <td colspan="2"><input type="submit" value="Submit"></td>
-    </tr>
-</table>
+<form action="#" method="post">
+    <table align="center">
+        <tr>
+            <td>Email or Username</td>
+            <td>: <input type="text"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>: <input type="password"></td>
+        </tr>
+        <tr align="center">
+            <td></td>
+            <td colspan="2"><input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+</form>
 </body>
