@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="registrationform" id="registrationform">
-    <form action="#" method="post">
+    <form action="main.php" method="post">
         <table align="center">
             <tr>
                 <td>First Name</td>
@@ -51,7 +51,7 @@
                 <td>Gender</td>
                 <td>:
                     <input type="radio" name="gender" value="male" checked>Male
-                    <input type="radio" name="gender" value="female" checked>Female
+                    <input type="radio" name="gender" value="female">Female
                 </td>
             </tr>
             <tr>
@@ -69,7 +69,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="Submit"></td>
+                <td colspan="10"><input type="submit" value="Submit"></td>
             </tr>
         </table>
     </form>
