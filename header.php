@@ -11,6 +11,10 @@
 </head>
 <body>
 <div class="header" id="header">
-
+	<div class="header-site">
+		<a href="#" class="header-site-name">
+			<h1>KINTE CHAI</h1>
+		</a>
+	</div>
 </div>
 </body>

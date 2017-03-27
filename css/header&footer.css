@@ -5,9 +5,36 @@
 
 /*header css*/
 .header{
-    background-color: black;
+    background-color: #27AE60;
     width: 100%;
-    height: 10vh;
+    height: 80px;
+}
+
+.header-site{
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.header-site-name{
+  color: #ECF0F1;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.header-site-name:link{
+  text-decoration: none;
+}
+
+.header-site-name:visited{
+  text-decoration: none;
+}
+
+.header-site-name:hover{
+  text-decoration: none;
+}
+
+.header-site-name:active{
+  text-decoration: none;
 }
 
 /*footer css*/
