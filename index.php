@@ -2,23 +2,23 @@
 <html>
 <head>
 	<title>Welcome To Kinte Chai</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
-<div class="body-container">
+<div class="index-body-container">
 	<!-- name -->
-        <div class="name-container" align="center">
-            <a href="main.php">
-                <h1 class="name">KINTE CHAI</h1>
+        <div class="index-name-container">
+            <a href="main.php"  class="index-name">
+                <h1>KINTE CHAI</h1>
             </a>
 
         </div>
         <!-- search-bar -->
-        <div class="search-bar" align="center">
-            <div class="search">
-              <input type="text" class="searchTerm" placeholder="What are you looking for?">
-                <a href="main.php"><button type="submit" class="searchButton">Search</button></a>
+        <div class="index-search-bar">
+            <div class="index-search">
+              <input type="text" class="index-search-input" placeholder="What are you looking for?">
+                <a href="main.php"><button type="submit" class="index-search-button">Search</button></a>
             </div>
 	    </div>
 
