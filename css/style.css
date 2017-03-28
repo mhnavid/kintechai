@@ -217,7 +217,6 @@
 .main-product-panel-head{
 	border-top: 3px dotted #27AE60;
 	border-bottom: 3px dotted #27AE60;
-
 }
 
 .main-product-panel-head-text{
@@ -228,4 +227,93 @@
 	width: 100%;
 	margin-top: 8px;
 	margin-bottom: 8px;
+}
+
+/*login page*/
+
+.login-input-table{
+    margin: 0px auto; 
+    margin-top: 40px;
+}
+
+.login-input-table tr td{
+	padding-bottom: 10px;
+}
+
+.login-email-or-username-text{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.login-email-or-username-input{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 800;
+}
+
+.login-email-or-username-input input{
+	height: 22px;
+	width: 200px;
+	border: none;
+	border-bottom: 2px solid #757575;
+	font-weight: 700;
+}
+
+.login-email-or-username-input input:focus{
+	border: none;
+	border-bottom: 2px solid #27AE60;
+	font-size: 17px;
+	color: #424242;
+}
+
+.login-password-text{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.login-password-input{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.login-password-input input{
+	height: 22px;
+	width: 200px;
+	border: none;
+	border-bottom: 2px solid #757575;
+	font-weight: 700;
+}
+
+.login-password-input input:focus{
+	border: none;
+	border-bottom: 2px solid #27AE60;
+	font-size: 17px;
+	color: #424242;
+}
+
+.login-submit-button{
+	text-align: center;
+}
+
+.login-submit-button td{
+	padding-top: 20px;
+}
+
+.login-submit-button td input{
+	font-size: 20px;
+	padding: 4px 2px;
+	background-color: #eee;
+	font-size: 18px;
+	font-weight: 700;
+	color: #27AE60;
+	border-bottom: 2px solid #27AE60;
+	border-right: 4px solid #27AE60;
+	border-bottom-right-radius: 7px;
+}
+
+.login-submit-button td input:hover{
+	background-color: #e0e0e0;
 }
