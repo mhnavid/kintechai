@@ -38,6 +38,28 @@
 }
 
 
+/*footer css*/
+
+.footer{
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background-color: #263238;
+}
+
+.footer-content p{
+	text-align: center;
+	margin-top: 20px;
+	color: #757575;
+}
+
+.footer-content p b{
+	color: #3498DB;
+	font-family: "Sansation Light";
+}
+
+
 /*index page*/
 
 .index-body-container{
@@ -123,8 +145,8 @@
 
 .main-account-panel{
 	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .main-login-button{
@@ -192,10 +214,18 @@
 	background-color: #e0e0e0;
 }
 
+.main-product-panel-head{
+	border-top: 3px dotted #27AE60;
+	border-bottom: 3px dotted #27AE60;
+
+}
+
 .main-product-panel-head-text{
 	background-color: #27AE60;
 	color: #ECF0F1;
 	font-size: 20px;
 	text-align: center;
 	width: 100%;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
