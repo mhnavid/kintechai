@@ -38,7 +38,7 @@
 </form>
 
 <!-- footer -->
-<div class="footer" id="footer">
+<div class="footer footer-position" id="footer">
     <div class="footer-content">
         <p>Copyright © 2017. All Rights Reserved by <b>Hexaparity</b>.</p>
     </div>

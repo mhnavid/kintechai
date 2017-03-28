@@ -22,7 +22,7 @@
     </div>
 </div>
 
-<div>
+<div class="main-content">
 <!-- login or create account -->
     <div class="main-account-panel" id="mainaccountpanel">
         <a href="login.php" class="main-login-button">
@@ -40,14 +40,25 @@
         </div>
     </div>
 
-    <div class="mainrelatedproduct" id="mainrelatedproduct">
+    <div class="main-related-product" id="mainrelatedproduct">
         <table>
-            <tr>
-                <td><img src="img/demo.png" alt="demo"></td>
-                <td><img src="img/demo.png" alt="demo"></td>
-                <td><img src="img/demo.png" alt="demo"></td>
-                <td><img src="img/demo.png" alt="demo"></td>
-                <td><img src="img/demo.png" alt="demo"></td>
+            <tr class="main-related-product-row">
+                <td class="main-related-product-image-first"><img src="img/demo.png" alt="demo"></td>
+                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
+                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
+                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
+            </tr>
+            <tr class="main-related-product-row">
+                <td class="main-related-product-image-first"><img src="img/demo.png" alt="demo"></td>
+                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
+                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
+                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
+            </tr>
+            <tr class="main-related-product-row">
+                <td class="main-related-product-image-first"><img src="img/demo.png" alt="demo"></td>
+                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
+                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
+                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
             </tr>
         </table>
     </div>
