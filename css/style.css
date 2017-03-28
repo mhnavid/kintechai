@@ -191,3 +191,11 @@
 .main-create-account-button-input:hover{
 	background-color: #e0e0e0;
 }
+
+.main-product-panel-head-text{
+	background-color: #27AE60;
+	color: #ECF0F1;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+}
