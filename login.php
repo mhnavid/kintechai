@@ -6,6 +6,8 @@
  * Time: 6:30 PM
  */
 ?>
+<!DOCTYPE html>
+<html>
 <head>
 	<title>Login</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -21,6 +23,7 @@
     </div>
 </div>
 
+<!-- page content -->
 <form action="#" method="post">
     <table class="login-input-table">
         <tr class="login-email-or-username">
@@ -46,3 +49,4 @@
 
 
 </body>
+</html>

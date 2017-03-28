@@ -351,3 +351,351 @@
 .login-submit-button td input:hover{
 	background-color: #e0e0e0;
 }
+
+/*registration page*/
+
+.registration-form{
+	margin-top: 40px;
+}
+
+.registration-table{
+	margin: 0px auto;
+}
+
+.registration-table tr td{
+	padding-bottom: 10px;
+}
+
+.registration-table-first-name-text{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-first-name-input{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-first-name-input input{
+	height: 22px;
+	width: 200px;
+	border: none;
+	border-bottom: 2px solid #757575;
+	font-weight: 700;
+}
+
+.registration-table-first-name-input input:focus{
+	border: none;
+	border-bottom: 2px solid #27AE60;
+	font-size: 17px;
+	color: #424242;
+}
+
+.registration-table-last-name-text{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-last-name-input{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-last-name-input input{
+	height: 22px;
+	width: 200px;
+	border: none;
+	border-bottom: 2px solid #757575;
+	font-weight: 700;
+}
+
+.registration-table-last-name-input input:focus{
+	border: none;
+	border-bottom: 2px solid #27AE60;
+	font-size: 17px;
+	color: #424242;
+}
+
+.registration-table-username-text{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-username-input{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-username-input input{
+	height: 22px;
+	width: 200px;
+	border: none;
+	border-bottom: 2px solid #757575;
+	font-weight: 700;
+}
+
+.registration-table-username-input input:focus{
+	border: none;
+	border-bottom: 2px solid #27AE60;
+	font-size: 17px;
+	color: #424242;
+}
+
+.registration-table-email-text{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-email-input{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-email-input input{
+	height: 22px;
+	width: 200px;
+	border: none;
+	border-bottom: 2px solid #757575;
+	font-weight: 700;
+}
+
+.registration-table-email-input input:focus{
+	border: none;
+	border-bottom: 2px solid #27AE60;
+	font-size: 17px;
+	color: #424242;
+}
+
+.registration-table-password-text{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-password-input{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-password-input input{
+	height: 22px;
+	width: 200px;
+	border: none;
+	border-bottom: 2px solid #757575;
+	font-weight: 700;
+}
+
+.registration-table-password-input input:focus{
+	border: none;
+	border-bottom: 2px solid #27AE60;
+	font-size: 17px;
+	color: #424242;
+}
+
+.registration-table-confirm-password-text{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-confirm-password-input{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-confirm-password-input input{
+	height: 22px;
+	width: 200px;
+	border: none;
+	border-bottom: 2px solid #757575;
+	font-weight: 700;
+}
+
+.registration-table-confirm-password-input input:focus{
+	border: none;
+	border-bottom: 2px solid #27AE60;
+	font-size: 17px;
+	color: #424242;
+}
+
+.registration-table-occupation-text{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-occupation-input{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-occupation-input input{
+	height: 22px;
+	width: 200px;
+	border: none;
+	border-bottom: 2px solid #757575;
+	font-weight: 700;
+}
+
+.registration-table-occupation-input input:focus{
+	border: none;
+	border-bottom: 2px solid #27AE60;
+	font-size: 17px;
+	color: #424242;
+}
+
+.registration-table-contact-text{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-contact-input{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-contact-input input{
+	height: 22px;
+	width: 200px;
+	border: none;
+	border-bottom: 2px solid #757575;
+	font-weight: 700;
+}
+
+.registration-table-contact-input input:focus{
+	border: none;
+	border-bottom: 2px solid #27AE60;
+	font-size: 17px;
+	color: #424242;
+}
+
+.registration-table-gender-text{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-gender-input{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-gender-input input{
+	width: 40px;
+	border: none;
+	border-bottom: 2px solid #757575;
+	font-weight: 700;
+}
+
+.registration-table-picture-text{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-picture-input{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-picture-browse{
+	height: 22px;
+	width: 200px;
+	border: none;
+	border: 2px solid #757575;
+	font-weight: 700;
+}
+
+.registration-table-picture-browse:focus{
+	border: none;
+	border: 2px solid #27AE60;
+	font-size: 17px;
+	color: #424242;
+}
+
+.registration-table-picture-browse-button{
+	font-size: 16px;
+	padding: 2px 1px;
+	background-color: #eee;
+	font-weight: 700;
+	color: #27AE60;
+	border-bottom: 2px solid #27AE60;
+	border-right: 4px solid #27AE60;
+	border-bottom-right-radius: 7px;
+}
+
+.registration-table-picture-browse-button:hover{
+	background-color: #e0e0e0;
+}
+
+.registration-table-buyer-text{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-buyer-input{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.registration-table-buyer-input select{
+	height: 28px;
+	width: 200px;
+	border: none;
+	border-bottom: 2px solid #757575;
+	font-weight: 700;
+	color: #424242;
+}
+
+.registration-table-buyer-input select:focus{
+	border: none;
+	border-bottom: 2px solid #27AE60;
+	color: #424242;
+}
+
+.registration-table-buyer-input select option{
+	padding-bottom: 5px;
+	padding-top: 3px;
+	border: none;
+	border-bottom: 2px solid #757575;
+	font-weight: 700;
+	color: #424242;
+}
+
+.registration-table-submit-button{
+	padding-top: 20px;
+	text-align: center;
+}
+
+.registration-table-submit-button input{
+	font-size: 20px;
+	padding: 4px 2px;
+	background-color: #eee;
+	font-size: 18px;
+	font-weight: 700;
+	color: #27AE60;
+	border-bottom: 2px solid #27AE60;
+	border-right: 4px solid #27AE60;
+	border-bottom-right-radius: 7px;
+}
+
+.registration-table-submit-button input:hover{
+	background-color: #e0e0e0;
+}
