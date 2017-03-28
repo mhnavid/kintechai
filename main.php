@@ -33,11 +33,13 @@
             <input class="main-create-account-button-input" type="button" value="Sign up">
         </a>
     </div>
-    <hr>
-    <div class="main-product-panel-head-text" id="mainproductpanelheadtext">
-        <h2>Available Products</h2>
+
+    <div class="main-product-panel-head">
+        <div class="main-product-panel-head-text" id="mainproductpanelheadtext">
+            <h2>Available Products</h2>
+        </div>
     </div>
-    <hr>
+
     <div class="mainrelatedproduct" id="mainrelatedproduct">
         <table border="1px">
             <tr>
@@ -48,6 +50,14 @@
                 <td><img src="img/demo.png" alt="demo"></td>
             </tr>
         </table>
+    </div>
+</div>
+
+
+<!-- footer -->
+<div class="footer" id="footer">
+    <div class="footer-content">
+        <p>Copyright © 2017. All Rights Reserved by <b>Hexaparity</b>.</p>
     </div>
 </div>
 
