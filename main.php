@@ -39,9 +39,15 @@
     </div>
     <hr>
     <div class="mainrelatedproduct" id="mainrelatedproduct">
-        <img src="" alt="1">
-        <img src="" alt="1">
-        <img src="" alt="1">
+        <table border="1px">
+            <tr>
+                <td><img src="img/demo.png" alt="demo"></td>
+                <td><img src="img/demo.png" alt="demo"></td>
+                <td><img src="img/demo.png" alt="demo"></td>
+                <td><img src="img/demo.png" alt="demo"></td>
+                <td><img src="img/demo.png" alt="demo"></td>
+            </tr>
+        </table>
     </div>
 </div>
 
