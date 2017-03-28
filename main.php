@@ -41,7 +41,7 @@
     </div>
 
     <div class="mainrelatedproduct" id="mainrelatedproduct">
-        <table border="1px">
+        <table>
             <tr>
                 <td><img src="img/demo.png" alt="demo"></td>
                 <td><img src="img/demo.png" alt="demo"></td>
