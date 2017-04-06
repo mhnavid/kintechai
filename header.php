@@ -1,9 +1,11 @@
+<?php
 /**
  * Created by PhpStorm.
  * User: Shahidul Islam
  * Date: 3/25/2017
  * Time: 6:35 PM
  */
+?>
 <html>
 <head>
     <title>Registartion</title>

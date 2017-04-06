@@ -1,9 +1,11 @@
+<?php
 /**
  * Created by PhpStorm.
  * User: Shahidul Islam
  * Date: 3/25/2017
  * Time: 6:30 PM
  */
+?>
 <!-- header -->
 <?php include ("header.php"); ?>
 
@@ -25,6 +27,4 @@
 </form>
 
 <!-- footer -->
-<? php include ("footer.php"); ?>
-</body>
-</html>
+<?php include ("footer.php"); ?>
