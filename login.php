@@ -17,7 +17,7 @@
 <!-- header -->
 <div class="header" id="header">
     <div class="header-site">
-        <a href="#" class="header-site-name">
+        <a href="main.php" class="header-site-name">
             <h1>KINTE CHAI</h1>
         </a>
     </div>
@@ -46,7 +46,5 @@
         <p>Copyright © 2017. All Rights Reserved by <b>Hexaparity</b>.</p>
     </div>
 </div>
-
-
 </body>
 </html>
