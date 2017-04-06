@@ -1,29 +1,16 @@
-<?php
 /**
  * Created by PhpStorm.
  * User: Shahidul Islam
  * Date: 3/26/2017
  * Time: 11:41 AM
  */
-?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Kinte Chai</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
 <!-- header -->
-<div class="header" id="header">
-    <div class="header-site">
-        <a href="#" class="header-site-name">
-            <h1>KINTE CHAI</h1>
-        </a>
-    </div>
-</div>
 
-<div class="main-content">
+<?php include ("header.php"); ?>
+
+
 <!-- login or create account -->
+<div class="main-content">
     <div class="main-account-panel" id="mainaccountpanel">
         <a href="login.php" class="main-login-button">
             <input class="main-login-button-input" type="button" value="Login">
@@ -63,14 +50,8 @@
         </table>
     </div>
 </div>
-
-
 <!-- footer -->
-<div class="footer" id="footer">
-    <div class="footer-content">
-        <p>Copyright © 2017. All Rights Reserved by <b>Hexaparity</b>.</p>
-    </div>
-</div>
+<?php include ("footer.php"); ?>
 
 </body>
 </html>

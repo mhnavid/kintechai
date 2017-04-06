@@ -1,4 +1,3 @@
-<?php
 /**
  * Created by PhpStorm.
  * User: Shahidul Islam
@@ -6,23 +5,9 @@
  * Time: 12:03 PM
  */
 
-?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Registartion</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
 
 <!-- header -->
-<div class="header" id="header">
-    <div class="header-site">
-        <a href="main.php" class="header-site-name">
-            <h1>KINTE CHAI</h1>
-        </a>
-    </div>
-</div>
+<?php include ("header.php"); ?>
 
 
 <div class="registration-form" id="registrationform">
@@ -89,10 +74,7 @@
 <script type="text/javascript" src="registrationvalidation.js"></script>
 
 <!-- footer -->
-<div class="footer footer-position" id="footer">
-    <div class="footer-content">
-        <p>Copyright © 2017. All Rights Reserved by <b>Hexaparity</b>.</p>
-    </div>
-</div>
+<?php include ("footer.php"); ?>
+
 </body>
 </html>

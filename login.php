@@ -1,29 +1,13 @@
-<?php
 /**
  * Created by PhpStorm.
  * User: Shahidul Islam
  * Date: 3/25/2017
  * Time: 6:30 PM
  */
-?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Login</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-
 <!-- header -->
-<div class="header" id="header">
-    <div class="header-site">
-        <a href="main.php" class="header-site-name">
-            <h1>KINTE CHAI</h1>
-        </a>
-    </div>
-</div>
+<?php include ("header.php"); ?>
 
-<!-- page content -->
+<!--login page content -->
 <form action="#" method="post">
     <table class="login-input-table">
         <tr class="login-email-or-username">
@@ -41,10 +25,6 @@
 </form>
 
 <!-- footer -->
-<div class="footer footer-position" id="footer">
-    <div class="footer-content">
-        <p>Copyright © 2017. All Rights Reserved by <b>Hexaparity</b>.</p>
-    </div>
-</div>
+<? php include ("footer.php"); ?>
 </body>
 </html>

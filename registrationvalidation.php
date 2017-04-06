@@ -6,7 +6,6 @@
  * Time: 9:07 AM
  */
 if ($_POST) {
-//    fetch data from registartion form
 
     $ufname = $_POST['resfname'];
     $ulname = $_POST['reslname'];
@@ -20,7 +19,7 @@ if ($_POST) {
     //$utype = $_POST['type']; //data fetch problem
     $flag=0;
 
-    //echo $ufname,$ulname,$uname,$uemail,$upass,$uconfirmpass,$uoccupation,$ucontact,$ugender,$utype;
+    //echo $ufname,$ulname,$uname,$uemail,$upass,$uconfirmpass,$uoccupation,$ucontact,$ugender;
 
     if ($ufname==""){
         $flag=1;
@@ -30,7 +29,7 @@ if ($_POST) {
         $flag=1;
 //        echo "1";
     }
-    if ($uname=""){
+    if ($uname==""){
         $flag=1;
 //        echo "2";
     }
@@ -38,7 +37,7 @@ if ($_POST) {
         $flag=1;
         echo "3";
     }
-    if ($upass=""||$upass!=$uconfirmpass){
+    if ($upass==""||$upass!=$uconfirmpass){
         $flag=1;
 //        echo "4";
     }
@@ -54,7 +53,18 @@ if ($_POST) {
         $flag=1;
 //        echo "7";
     }
+//    database insert function
+    function updateSQL($sql){
+        $conn = mysqli_connect("localhost", "root", "","kintechai_db");
+        //echo $sql;
+        $result = mysqli_query($conn, $sql)or die(mysqli_error());
+        return $result;
+    }
     if ($flag!=1){
-       header('Location:main.php');
+//        echo $ufname,$ulname,$uname,$uemail,$upass,$uconfirmpass,$uoccupation,$ucontact,$ugender;
+        //include("db.php");
+        $q="insert into user_table (username,password) values ('".$uname."','".$upass."')";
+        updateSQL($q);
+
     }
 }
