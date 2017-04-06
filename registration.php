@@ -5,6 +5,7 @@
  * Date: 3/26/2017
  * Time: 12:03 PM
  */
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -62,8 +63,8 @@
             <tr>
                 <td class="registration-table-gender-text">Gender</td>
                 <td class="registration-table-gender-input">:
-                    <input type="radio" name="gender" value="male" checked >Male
-                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="male" id="mgender" checked>Male
+                    <input type="radio" name="gender" value="female" id="fgender">Female
                 </td>
             </tr>
             <tr>
@@ -80,12 +81,12 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="10" class="registration-table-submit-button"><input type="submit" value="Submit"></td>
+                <td colspan="10" class="registration-table-submit-button"><input type="submit" value="Submit" onclick="return resvalid();" ></td>
             </tr>
         </table>
     </form>
 </div>
-
+<script type="text/javascript" src="registrationvalidation.js"></script>
 
 <!-- footer -->
 <div class="footer footer-position" id="footer">
