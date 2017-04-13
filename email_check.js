@@ -9,7 +9,7 @@ function eamil_vail() {
     var pa=str.indexOf("@");
     var pd=str.indexOf(".");
     var av=false;
-    if(pd>pa){
+    if(pa>0 && pd>pa){
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
