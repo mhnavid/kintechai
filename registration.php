@@ -28,7 +28,9 @@
             </tr>
             <tr>
                 <td class="registration-table-email-text">Email</td>
-                <td class="registration-table-email-input">: <input type="text" name="resemail" id="resemail"></td>
+                <td class="registration-table-email-input">: <input type="text" name="resemail" id="resemail"><br>
+                <h6>* required</h6>
+                </td>
             </tr>
             <tr>
                 <td class="registration-table-password-text">Password</td>
