@@ -3,10 +3,12 @@
  */
 
 function eamil_vail() {
+    document.getElementById("email_req_id").innerHTML="* required";
     var str=document.getElementById('resemail').value;
     //document.getElementById("spinner").style.visibility= "visible";
     var pa=str.indexOf("@");
     var pd=str.indexOf(".");
+    var av=false;
     if(pd>pa){
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
@@ -14,11 +16,21 @@ function eamil_vail() {
             var resp=JSON.parse(xmlhttp.responseText);
             var msg="";
             for(i=0;i<resp.length;i++){
-                msg=resp[i].email;
+                if(resp[i].email==str){
+                    document.getElementById("email_req_id").innerHTML="Already Exits";
+                    av=true
+                }
+                //  else {
+                //     document.getElementById("email_req_id").innerHTML="Already Exits"
+                // }
             }
             //alert(msg);
-            document.getElementById("email_req_id").innerHTML = msg;
+            //document.getElementById("email_req_id").innerHTML = msg;
         }
+        if(!av){
+            document.getElementById("email_req_id").innerHTML="Email ok"
+        }
+
     };
         var url="email_unique.php";
     //alert(url);
