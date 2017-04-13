@@ -28,8 +28,8 @@
             </tr>
             <tr>
                 <td class="registration-table-email-text">Email</td>
-                <td class="registration-table-email-input">: <input type="text" name="resemail" id="resemail"><br>
-                <h6>* required</h6>
+                <td class="registration-table-email-input">: <input type="text" name="resemail" id="resemail" onkeyup="eamil_vail()"><br>
+                <h6 id="email_req_id">* required</h6>
                 </td>
             </tr>
             <tr>
@@ -75,6 +75,7 @@
     </form>
 </div>
 <script type="text/javascript" src="registrationvalidation.js"></script>
+    <script type="text/javascript" src="email_check.js"></script>
 
 <!-- footer -->
 <?php include ("footer.php"); ?>

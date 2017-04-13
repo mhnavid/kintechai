@@ -19,4 +19,4 @@ function getJSONFromDB($sql){
 
 $qu="select * from user_Demo";
 
-print_r(getJSONFromDB($qu));
+echo getJSONFromDB($qu);
