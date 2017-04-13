@@ -20,12 +20,8 @@ function eamil_vail() {
                     document.getElementById("email_req_id").innerHTML="Already Exits";
                     av=true
                 }
-                //  else {
-                //     document.getElementById("email_req_id").innerHTML="Already Exits"
-                // }
             }
-            //alert(msg);
-            //document.getElementById("email_req_id").innerHTML = msg;
+
         }
         if(!av){
             document.getElementById("email_req_id").innerHTML="Email ok"
@@ -37,10 +33,3 @@ function eamil_vail() {
     xmlhttp.open("GET", url, true);
     xmlhttp.send();}
 }
-
-// var c=0;
-// function eamil_vail() {
-//
-//     document.getElementById("email_req_id").innerHTML = c;
-//     c++;
-// }
