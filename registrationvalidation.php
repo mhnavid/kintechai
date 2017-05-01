@@ -61,8 +61,6 @@ if ($_POST) {
         return $result;
     }
     if ($flag!=1){
-//        echo $ufname,$ulname,$uname,$uemail,$upass,$uconfirmpass,$uoccupation,$ucontact,$ugender;
-        //include("db.php");
         $q="insert into user_table (username,password) values ('".$uname."','".$upass."')";
         updateSQL($q);
 

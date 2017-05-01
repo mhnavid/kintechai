@@ -4,7 +4,7 @@
  * User: Shahidul Islam
  * Date: 4/6/2017
  * Time: 2:51 PM
- */
+*/
 function getJSONFromDB($sql){
     $conn = mysqli_connect("localhost", "root", "","user_table");
 
