@@ -28,7 +28,9 @@
             </tr>
             <tr>
                 <td class="registration-table-email-text">Email</td>
-                <td class="registration-table-email-input">: <input type="text" name="resemail" id="resemail"></td>
+                <td class="registration-table-email-input">: <input type="text" name="resemail" id="resemail" onkeyup="eamil_vail()"><br>
+                <h6 id="email_req_id">* required</h6>
+                </td>
             </tr>
             <tr>
                 <td class="registration-table-password-text">Password</td>
@@ -55,7 +57,9 @@
             </tr>
             <tr>
                 <td class="registration-table-picture-text">Picture</td>
-                <td class="registration-table-picture-input">: <input class="registration-table-picture-browse" type="text"><input class="registration-table-picture-browse-button" type="button" value="Browse"></td>
+                <td class="registration-table-picture-input">:
+                    <input class="registration-table-picture-browse" type="text">
+                    <input class="registration-table-picture-browse-button" type="button" value="Browse"></td>
             </tr>
             <tr>
                 <td class="registration-table-buyer-text">Buyer Type</td>
@@ -73,6 +77,7 @@
     </form>
 </div>
 <script type="text/javascript" src="registrationvalidation.js"></script>
+    <script type="text/javascript" src="email_check.js"></script>
 
 <!-- footer -->
 <?php include ("footer.php"); ?>
