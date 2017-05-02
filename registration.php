@@ -8,7 +8,10 @@
 ?>
 
 <!-- header -->
-<?php include ("header.php"); ?>
+<?php include ("header.php");
+
+
+?>
 
 
 <div class="registration-form" id="registrationform">

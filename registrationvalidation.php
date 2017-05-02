@@ -61,8 +61,11 @@ if ($_POST) {
         return $result;
     }
     if ($flag!=1){
+//        update database information
         $q="insert into user_table (username,password) values ('".$uname."','".$upass."')";
         updateSQL($q);
+        header('Location: login.php?success=1');
+        echo die();
 
     }
 }
