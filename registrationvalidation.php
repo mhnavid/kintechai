@@ -62,9 +62,9 @@ if ($_POST) {
     }
     if ($flag!=1){
 //        update database information
-        $q1 = "insert into u_contacts (contacts) values ('".$ucontact."')";
-        $q2 = "insert into u_info (f_name, l_name, occupation, gender, type) values ('".$ufname."', '".$ulname."', '".$uoccupation."', '".$ugender."', '".$utype."')";
-        $q3 = "insert into u_login (user_name, email, pass) values ('".$uname."', '".$uemail."', '".$upass."')";
+        $q1 = "insert into ucontacts (contactno) values ('".$ucontact."')";
+        $q2 = "insert into uinformation (fname, lname, occupation, gender, type) values ('".$ufname."', '".$ulname."', '".$uoccupation."', '".$ugender."', '".$utype."')";
+        $q3 = "insert into ulogin (username, email, password) values ('".$uname."', '".$uemail."', '".$upass."')";
         updateSQL($q);
         header('Location: login.php?success=1');
         echo die();
