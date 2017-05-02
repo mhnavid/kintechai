@@ -1,3 +1,10 @@
 insert into u_contacts values(1, 03043);
 INSERT into u_login VALUES(1, 'Shawan', 'something', 'pass');
 INSERT into u_info VALUES (1, 'Shawan', 'Chowdhury', 'Student', 'male', 'Corporate');
+
+
+INSERT INTO `u_contacts`(`contacts`) VALUES ([value-2])
+
+INSERT INTO `u_info`(f_name`, `l_name`, `occupation`, `gender`, `type`) VALUES ([value-2],[value-3],[value-4],[value-5],[value-6])
+
+INSERT INTO `u_login`(`user_name`, `email`, `pass`) VALUES ([value-2],[value-3],[value-4])
