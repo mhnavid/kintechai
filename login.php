@@ -9,8 +9,6 @@
 <!-- header -->
 <?php include ("header.php");?>
 
-
-
 <!--login page content -->
 <form action="loginvalidation.php" method="post">
     <table class="login-input-table">

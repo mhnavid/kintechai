@@ -8,7 +8,7 @@
 
 
 function getJSONFromDB($sql){
-    $conn = mysqli_connect("localhost", "root", "","kintecahi_demo");
+    $conn = mysqli_connect("localhost", "root", "","kintechai_db");
     $result = mysqli_query($conn, $sql)or die(mysqli_error());
     $arr=array();
     while($row = mysqli_fetch_assoc($result)) {
@@ -17,6 +17,6 @@ function getJSONFromDB($sql){
     return json_encode($arr);
 }
 
-$qu="select * from user_Demo";
+$qu="SELECT * FROM ulogin";
 
 echo getJSONFromDB($qu);

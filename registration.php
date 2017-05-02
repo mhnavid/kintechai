@@ -58,12 +58,12 @@
                     <input type="radio" name="gender" value="female" id="fgender">Female
                 </td>
             </tr>
-            <tr>
-                <td class="registration-table-picture-text">Picture</td>
-                <td class="registration-table-picture-input">:
-                    <input class="registration-table-picture-browse" type="text">
-                    <input class="registration-table-picture-browse-button" type="button" value="Browse"></td>
-            </tr>
+<!--            <tr>-->
+<!--                <td class="registration-table-picture-text">Picture</td>-->
+<!--                <td class="registration-table-picture-input">:-->
+<!--                    <input class="registration-table-picture-browse" type="text">-->
+<!--                    <input class="registration-table-picture-browse-button" type="button" value="Browse"></td>-->
+<!--            </tr>-->
             <tr>
                 <td class="registration-table-buyer-text">Buyer Type</td>
                 <td class="registration-table-buyer-input">:

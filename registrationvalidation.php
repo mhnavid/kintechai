@@ -16,7 +16,7 @@ if ($_POST) {
     $uoccupation = $_POST['resoccupation'];
     $ucontact = $_POST['rescontact'];
     $ugender = $_POST['gender'];
-    //$utype = $_POST['type']; //data fetch problem
+    $utype = $_POST['type']; //data fetch problem
     $flag=0;
 
     //echo $ufname,$ulname,$uname,$uemail,$upass,$uconfirmpass,$uoccupation,$ucontact,$ugender;

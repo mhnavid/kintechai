@@ -17,6 +17,7 @@ function eamil_vail() {
             var msg="";
             for(i=0;i<resp.length;i++){
                 if(resp[i].email==str){
+                    alert(document.getElementById("email_req_id").innerHTML)
                     document.getElementById("email_req_id").innerHTML="Already Exits";
                     av=true
                 }

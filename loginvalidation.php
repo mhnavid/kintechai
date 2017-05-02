@@ -11,6 +11,34 @@ if (isset($_POST['logemail'])&& isset($_POST['logpassword'])) {
     $email= $_POST['logemail'];
     $pass= $_POST['logpassword'];
 
+
+    function getJSONFromDB($sql){
+        $conn = mysqli_connect("localhost", "root", "","kintechai_db");
+        $result = mysqli_query($conn, $sql)or die(mysqli_error());
+        $arr=array();
+        while($row = mysqli_fetch_assoc($result)) {
+            $arr[]=$row;
+        }
+        return json_encode($arr);
+    }
+
+    $qu="SELECT * FROM ulogin";
+
+    //echo getJSONFromDB($qu);
+
+    $json = json_decode(getJSONFromDB($qu), true);
+
+    foreach ($json as $key => $value) {
+        if (!is_array($value)) {
+            echo $key . '=>' . $value . '<br />';
+        } else {
+            foreach ($value as $key => $val) {
+                echo $key . '=>' . $val . '<br />';
+            }
+        }
+    }
+
+
 //    echo $email,$pass;
 
 //    include('db.php');
