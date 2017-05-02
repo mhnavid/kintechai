@@ -14,29 +14,35 @@ if (isset($_POST['logemail'])&& isset($_POST['logpassword'])) {
 
     function getJSONFromDB($sql){
         $conn = mysqli_connect("localhost", "root", "","kintechai_db");
-        $result = mysqli_query($conn, $sql)or die(mysqli_error());
+        echo $result = mysqli_query($conn, $sql)or die(mysqli_error());
         $arr=array();
         while($row = mysqli_fetch_assoc($result)) {
             $arr[]=$row;
         }
         return json_encode($arr);
+
+//        echo mysqli_fetch_assoc($result);
     }
 
-    $qu="SELECT * FROM ulogin";
+//     echo $qu="SELECT password FROM ulogin WHERE email='".$email."'";
 
-    //echo getJSONFromDB($qu);
+    $qu="SELECT password FROM `ulogin` WHERE `email`='shawonis08@gmial.com'";
+
+//    echo getJSONFromDB($qu);
 
     $json = json_decode(getJSONFromDB($qu), true);
 
-    foreach ($json as $key => $value) {
-        if (!is_array($value)) {
-            echo $key . '=>' . $value . '<br />';
-        } else {
-            foreach ($value as $key => $val) {
-                echo $key . '=>' . $val . '<br />';
-            }
-        }
-    }
+//    foreach ($json as $key => $value) {
+//        if (!is_array($value)) {
+//            echo $key . '=>' . $value . '<br />';
+//        } else {
+//            foreach ($value as $key => $val) {
+//                echo $key . '=>' . $val . '<br />';
+//            }
+//        }
+//    }
+
+    echo $json["password"];
 
 
 //    echo $email,$pass;
