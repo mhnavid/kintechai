@@ -65,7 +65,9 @@ if ($_POST) {
         $q1 = "insert into ucontacts (contactno) values ('".$ucontact."')";
         $q2 = "insert into uinformation (fname, lname, occupation, gender, type) values ('".$ufname."', '".$ulname."', '".$uoccupation."', '".$ugender."', '".$utype."')";
         $q3 = "insert into ulogin (username, email, password) values ('".$uname."', '".$uemail."', '".$upass."')";
-        updateSQL($q);
+        updateSQL($q1);
+        updateSQL($q2);
+        updateSQL($q3);
         header('Location: login.php?success=1');
         echo die();
 
