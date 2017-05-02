@@ -6,25 +6,28 @@
  * Time: 10:46 AM
  */
 session_start();
-if (isset($_POST['email'])&& isset($_POST['password'])) {
+if (isset($_POST['logemail'])&& isset($_POST['logpassword'])) {
 
-    $email= $_POST['email'];
-    $pass= $_POST['password'];
-    include('db.php');
+    $email= $_POST['logemail'];
+    $pass= $_POST['logpassword'];
 
-    $q="select * from users where email='$email' and password='$pass'";
+//    echo $email,$pass;
 
-    $result=mysql_query($q);
-    $row=mysql_fetch_array($result);
+//    include('db.php');
+//
+//    $q="select * from users where email='$email' and password='$pass'";
+//
+//    $result=mysql_query($q);
+//    $row=mysql_fetch_array($result);
 
-    if($row['email']==$email&& $row['password']==$pass){
-        $_SESSION['email']=$email;
-        $_SESSION['password']=$pass;
-        $_SESSION['id']=$row['id'];
-        header('Location: user.php');
-    }
-    else{
-        header('Location: login.php?error=1');
-    }
+//    if($row['email']==$email&& $row['password']==$pass){
+//        $_SESSION['email']=$email;
+//        $_SESSION['password']=$pass;
+//        $_SESSION['id']=$row['id'];
+//        header('Location: user.php');
+//    }
+//    else{
+//        header('Location: login.php?error=1');
+//    }
 }
 ?>

@@ -16,7 +16,7 @@
     <table class="login-input-table">
         <tr class="login-email-or-username">
             <td class="login-email-or-username-text">Email or Username</td>
-            <td class="login-email-or-username-input">: <input type="text" name="logusername"></td>
+            <td class="login-email-or-username-input">: <input type="text" name="logemail"></td>
         </tr>
         <tr>
             <td class="login-password-text">Password</td>
