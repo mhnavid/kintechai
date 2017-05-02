@@ -13,6 +13,7 @@
 .header-site{
   padding-left: 30px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-site-name{
@@ -35,6 +36,49 @@
 
 .header-site-name:active{
   text-decoration: none;
+}
+
+.header-option{
+	background-color: #27AE60;
+    width: 100%;
+    height: 30px;
+	border-top: 1px solid #ECF0F1;
+}
+
+.header-option a:link{
+  text-decoration: none;
+}
+
+.header-option a:visited{
+  text-decoration: none;
+}
+
+.header-option a:hover{
+  text-decoration: none;
+}
+
+.header-option a:active{
+  text-decoration: none;
+}
+
+.header-option-username{
+	color: #ECF0F1;
+  font-weight: 600;
+  font-size: 11px;
+  width: 49%;
+  float: left;
+  text-align: center;
+  border-right: 1px solid #ECF0F1;
+}
+
+
+.header-option-logout{
+	color: #ECF0F1;
+  font-weight: 600;
+  font-size: 11px;
+  width: 49%;
+  float: left;
+  text-align: center;
 }
 
 
@@ -697,5 +741,186 @@
 }
 
 .registration-table-submit-button input:hover{
+	background-color: #e0e0e0;
+}
+
+
+/*userpage css*/
+
+.userpage-user{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.userpage-user-photo{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+.userpage-user-photo img{
+	height: 150px;
+	width: 150px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.userpage-user-photo input{
+	font-size: 12px;
+	padding: 2px 1px;
+	background-color: #eee;
+	font-weight: 700;
+	color: #27AE60;
+	border-bottom: 2px solid #27AE60;
+	border-right: 4px solid #27AE60;
+	border-bottom-right-radius: 7px;
+}
+
+.userpage-user-photo input:hover{
+	background-color: #e0e0e0;
+}
+
+
+.userpage-user-details{
+	width: 50%;
+	float: right;
+}
+
+.userpage-user-details table{
+	margin: 0 auto;
+	font-size: 22px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.userpage-user-details table tr td{
+	padding-top: 30px;
+}
+
+.userpage-product-button{
+	font-size: 16px;
+	padding: 3px 2px;
+	background-color: #eee;
+	font-weight: 700;
+	color: #27AE60;
+	border-bottom: 2px solid #27AE60;
+	border-right: 4px solid #27AE60;
+	border-bottom-right-radius: 7px;
+	margin-left: 5px;
+	text-align: center;
+}
+
+.userpage-product-button:hover{
+	background-color: #e0e0e0;
+}
+
+.userpage-product a:link {
+    text-decoration: none;
+}
+
+.userpage-product a:visited {
+    text-decoration: none;
+}
+
+.userpage-product a:hover {
+    text-decoration: none;
+}
+
+.userpage-product a:active {
+    text-decoration: none;
+}
+
+.userpage-user-product h1{
+	width: 100%;
+	font-size: 30px;
+	color: #27AE60;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 200px;
+	border-bottom: 1px solid #27AE60;
+}
+
+/*productInput */
+
+.productInput{
+	width: 100%;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.productInput table tr td{
+	margin: 0 auto;
+}
+
+.productInput-image{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+.productInput-image td img{
+	height: 200px;
+	width: 200px;
+	text-align: center;
+}
+
+.productInput-details{
+	width: 50%;
+	float: left;
+}
+
+.productInput-details td span{
+	font-size: 22px;
+	color: #27AE60;
+	font-weight: 600;
+}
+
+.productInput-details td input{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.productInput-details td input:focus{
+	border: none;
+	border: 2px solid #27AE60;
+	font-size: 17px;
+	color: #424242;
+}
+
+
+.productInput-details td textarea{
+	font-size: 20px;
+	color: #27AE60;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+
+.productInput-details td textarea:focus{
+	border: none;
+	border: 2px solid #27AE60;
+	color: #424242;
+}
+
+.productInput-submit{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.productInput-submit-button{
+	font-size: 16px;
+	padding: 4px 2px;
+	background-color: #eee;
+	font-weight: 700;
+	color: #27AE60;
+	border-bottom: 2px solid #27AE60;
+	border-right: 4px solid #27AE60;
+	border-bottom-right-radius: 7px;
+}
+
+.productInput-submit-button:hover{
 	background-color: #e0e0e0;
 }
