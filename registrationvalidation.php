@@ -5,8 +5,10 @@
  * Date: 4/6/2017
  * Time: 9:07 AM
  */
-if ($_POST) {
+require_once 'autoload.php';
 
+if ($_POST) {
+	
     $ufname = $_POST['resfname'];
     $ulname = $_POST['reslname'];
     $uname = $_POST['resuname'];
@@ -16,9 +18,9 @@ if ($_POST) {
     $uoccupation = $_POST['resoccupation'];
     $ucontact = $_POST['rescontact'];
     $ugender = $_POST['gender'];
-    $utype = $_POST['type']; //data fetch problem
+    $utype = $_POST['type']; //data fetch problem -->> which is fixed ;D
     $flag=0;
-
+	
     //echo $ufname,$ulname,$uname,$uemail,$upass,$uconfirmpass,$uoccupation,$ucontact,$ugender;
 
     if ($ufname==""){
@@ -53,23 +55,30 @@ if ($_POST) {
         $flag=1;
 //        echo "7";
     }
-//    database insert function
-    function updateSQL($sql){
-        $conn = mysqli_connect("localhost", "root", "","kintechai_db");
-        //echo $sql;
-        $result = mysqli_query($conn, $sql)or die(mysqli_error());
-        return $result;
-    }
+	
+    
+// Processing Image Upload
+	
+	$image = fileUpload('picture', IMAGE_UPLOAD_PATH_USER);
+	
+    
     if ($flag!=1){
+		
 //        update database information
-        $q1 = "insert into ucontacts (contactno) values ('".$ucontact."')";
-        $q2 = "insert into uinformation (fname, lname, occupation, gender, type) values ('".$ufname."', '".$ulname."', '".$uoccupation."', '".$ugender."', '".$utype."')";
-        $q3 = "insert into ulogin (username, email, password) values ('".$uname."', '".$uemail."', '".$upass."')";
+        $q1 = "insert into ucontacts (contactno) values ('$ucontact')";
+        
+        $q2 = "	insert into uinformation (fname, lname, occupation, gender, `type`, `image`)
+				values ('$ufname', '$ulname', '$uoccupation', '$ugender', '$utype', '$image')";
+        
+        $q3 = "	insert into ulogin (username, email, password)
+				values ('$uname', '$uemail', '".md5(trim($upass))."')";
+		
         updateSQL($q1);
         updateSQL($q2);
         updateSQL($q3);
-        header('Location: login.php?success=1');
-        echo die();
+		
+        
+        jsRedirect('/login.php?success=1'); //redirects using javascript
 
     }
 }

@@ -5,6 +5,7 @@
  * Date: 3/25/2017
  * Time: 6:35 PM
  */
+require_once 'autoload.php';
 ?>
 <html>
 <head>
@@ -17,5 +18,6 @@
         <a href="main.php" class="header-site-name">
             <h1>KINTE CHAI</h1>
         </a>
+        <?php include_once 'temp menu.php'?><!--REMOVE THIS BEFORE DEPLOYMENT-->
     </div>
 </div>

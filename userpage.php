@@ -1,24 +1,37 @@
-<!-- header -->
-<?php include ("header.php");?>
+<?php
+require_once 'autoload.php';
 
-<?php include ("headeroption.php");?>
+//preceding only if user is logged iny
+protectedAccess();
+
+// getUserInfo(Session::get('user_id'));
+
+$user = Session::get('user');
 
 
+$profileImg = ($user->image) ? IMAGE_UPLOAD_PATH_USER.$user->image : 'img/profile-picture.jpg'; //profile pic
+
+//<!-- header -->
+include ("header.php");
+
+include ("headeroption.php");
+
+?>
 
 <div class="userpage-user">
 	<div class="userpage-user-photo">
-		<img src="img/demo.png"><br>
+		<img src="<?php echo $profileImg ?>" alt="User Image"><br>
 		<input type="button" value="Change picture">
 	</div>
 	<div class="userpage-user-details">
 		<table>
 			<tr>
 				<td>Full Name </td>
-				<td>: <span>Test User</span></td>
+				<td>: <span><?php echo $user->fname .' '.$user->lname ?></span></td>
 			</tr>
 			<tr>
 				<td>Mail</td>
-				<td>: <span>example@gmail.com</span></td>
+				<td>: <span><?php echo $user->email; ?></span></td>
 			</tr>
 			<tr>
 				<td colspan="2" class="userpage-product">
@@ -39,15 +52,26 @@
 <div>
 	<div class="main-related-product" id="mainrelatedproduct">
         <table>
-            <tr class="main-related-product-row">
-                <td class="main-related-product-image-first"><img src="img/demo.png" alt="demo"></td>
-                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
-                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
-                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
+            <tr class="main-related-product-row" id="products-user">
+                <!--<td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>-->
             </tr>
         </table>
     </div>
 </div>
 
 <!-- footer -->
-<!-- <?php include ("footer.php"); ?> -->
+
+<script src="js/jquery-1.6.2.js"></script>
+<script src="js/axios.min.js"></script>
+<script src="js/AJAX.js"></script>
+<script>
+    $(document).ready(function () {
+
+        //load all products when document get's loaded
+
+        $.bind('load', getAllProducts('getproductsuser.php', 0, 12, '#products-user', '1'));
+
+    });
+</script>
+
+<?php include ("footer.php"); ?>

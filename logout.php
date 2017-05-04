@@ -7,5 +7,6 @@
  */
 session_start();
 session_destroy();
+setcookie('user_type', 'guest', time()+60*60*24*7, '/');
 header('Location: login.php?success=2');
  ?>

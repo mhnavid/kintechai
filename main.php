@@ -5,34 +5,25 @@
  * Date: 3/26/2017
  * Time: 11:41 AM
  */
+
+include_once 'header.php';
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Kinte Chai</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-<!-- header -->
-<div class="header" id="header">
-    <div class="header-site">
-        <a href="main.php" class="header-site-name">
-            <h1>KINTE CHAI</h1>
-        </a>
-    </div>
-</div>
 
 <div class="main-content">
 <!-- login or create account -->
 
     <div class="main-account-panel" id="mainaccountpanel">
-        <a href="login.php" class="main-login-button">
-            <input class="main-login-button-input" type="button" value="Login">
-        </a>
-        <span>OR</span>
-        <a href="registration.php " class="main-create-account-button">
-            <input class="main-create-account-button-input" type="button" value="Sign up">
-        </a>
+        
+        <?php if (!Session::get('user_id')) { ?> <!--displays only if user is not authenticated-->
+        
+            <a href="login.php" class="main-login-button">
+                <input class="main-login-button-input" type="button" value="Login">
+            </a>
+            <span>OR</span>
+            <a href="registration.php " class="main-create-account-button">
+                <input class="main-create-account-button-input" type="button" value="Sign up">
+            </a>
+        <?php } ?>
     </div>
 
     <div class="main-product-panel-head">
@@ -43,32 +34,34 @@
 
     <div class="main-related-product" id="mainrelatedproduct">
         <table>
-            <tr class="main-related-product-row">
-                <td class="main-related-product-image-first"><img src="img/demo.png" alt="demo"></td>
-                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
-                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
-                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
-            </tr>
-            <tr class="main-related-product-row">
-                <td class="main-related-product-image-first"><img src="img/demo.png" alt="demo"></td>
-                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
-                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
-                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
-            </tr>
-            <tr class="main-related-product-row">
-                <td class="main-related-product-image-first"><img src="img/demo.png" alt="demo"></td>
-                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
-                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
-                <td class="main-related-product-image"><img src="img/demo.png" alt="demo"></td>
-            </tr>
+            <tr class="main-related-product-row" id="products-all"></tr>
         </table>
     </div>
 </div>
 <!-- footer for mainpage -->
-<div class="footer" id="footer">
-    <div class="footer-content">
-        <p>Copyright © 2017. All Rights Reserved by <b>Hexaparity</b>.</p>
-    </div>
-</div>
-</body>
-</html>
+
+<script src="js/jquery-1.6.2.js"></script>
+<script src="js/axios.min.js"></script>
+<script src="js/js.cookie.js"></script>
+<script src="js/AJAX.js"></script>
+<script>
+    $(document).ready(function () {
+
+        //load all products when document get's loaded
+
+        $.bind('load', getAllProducts('getproductsall.php', 0, 12, '#products-all'));
+        
+        //redirecting user if clicked in product pic but not logged in
+        
+        console.log(Cookies.get('user_type'));
+        if (Cookies.get('user_type') === 'guest' || Cookies.get('user_type') === undefined) {
+            
+            $('.productImg').live({
+                click: function () {
+                    window.location = '/login.php?error=2';
+                }
+            });
+        }
+    });
+</script>
+<?php include_once 'footer.php'?>

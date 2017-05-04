@@ -5,63 +5,44 @@
  * Date: 5/2/2017
  * Time: 10:46 AM
  */
-session_start();
-if (isset($_POST['logemail'])&& isset($_POST['logpassword'])) {
+require_once 'autoload.php';
+
+if (isset($_POST['logemail'])&& isset($_POST['logpassword'])) { //if login form submitted
 
     $email= $_POST['logemail'];
-    $pass= $_POST['logpassword'];
-
-
-    function getJSONFromDB($sql){
-        $conn = mysqli_connect("localhost", "root", "","kintechai_db");
-        echo $result = mysqli_query($conn, $sql)or die(mysqli_error());
-        $arr=array();
-        while($row = mysqli_fetch_assoc($result)) {
-            $arr[]=$row;
-        }
-        return json_encode($arr);
-
-//        echo mysqli_fetch_assoc($result);
-    }
-
-//     echo $qu="SELECT password FROM ulogin WHERE email='".$email."'";
-
-    $qu="SELECT password FROM `ulogin` WHERE `email`='shawonis08@gmial.com'";
-
-//    echo getJSONFromDB($qu);
-
-    $json = json_decode(getJSONFromDB($qu), true);
-
-//    foreach ($json as $key => $value) {
-//        if (!is_array($value)) {
-//            echo $key . '=>' . $value . '<br />';
-//        } else {
-//            foreach ($value as $key => $val) {
-//                echo $key . '=>' . $val . '<br />';
-//            }
-//        }
-//    }
-
-    echo $json["password"];
-
-
-//    echo $email,$pass;
-
-//    include('db.php');
-//
-//    $q="select * from users where email='$email' and password='$pass'";
-//
-//    $result=mysql_query($q);
-//    $row=mysql_fetch_array($result);
-
-//    if($row['email']==$email&& $row['password']==$pass){
-//        $_SESSION['email']=$email;
-//        $_SESSION['password']=$pass;
-//        $_SESSION['id']=$row['id'];
-//        header('Location: user.php');
-//    }
-//    else{
-//        header('Location: login.php?error=1');
-//    }
+    $pass= md5(trim($_POST['logpassword']));
+	
+	
+	if (empty($email) || empty($pass)) { //if login form submitted with empty string
+		
+		jsRedirect('/login.php?error=3');
+		
+ 	} else {
+		
+		$loginSQL = "SELECT `ucontacts_id` AS `id` FROM `ulogin`
+					 WHERE `email` = '$email' AND `password` = '$pass'
+					";
+		
+		$result = getFromDB($loginSQL, false, true) ?? null;
+		
+		if ($result) { //if user found
+			
+			Session::put('user_id', $result->id);
+			
+			setcookie('user_type', 'user', time()+60*60*24*7, '/');
+			
+			jsRedirect('/userpage.php');
+		} else {
+			
+			jsRedirect('/login.php?error=1');
+		}
+ 	}
 }
+
+
+
+
+
+
+
 ?>
